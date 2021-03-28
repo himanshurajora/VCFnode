@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="260.6 221.525 854.8 76.021" width="854.8pt" height="76.021pt">
+	<defs>
+		<clipPath id="_clipPath_RyXN9gHXHtexuCMWhYvkr4tko1t3Fwec">
+			<rect x="260.6" y="221.525" width="854.8" height="76.021" />
+		</clipPath>
+	</defs>
+	<g clip-path="url(#_clipPath_RyXN9gHXHtexuCMWhYvkr4tko1t3Fwec)">
+		<defs>
+			<filter id="yrKBrau80As5WnVoWHqfzWDwuAtDBhPH" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+				<feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" stdDeviation="0" />
+				<feOffset xmlns="http://www.w3.org/2000/svg" dx="0" dy="0" result="pf_100_offsetBlur" />
+				<feFlood xmlns="http://www.w3.org/2000/svg" flood-color="#000000" flood-opacity="0.65" />
+				<feComposite xmlns="http://www.w3.org/2000/svg" in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow" />
+				<feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="pf_100_dropShadow" mode="normal" />
+				<!-- <feGaussianBlur xmlns="http://www.w3.org/2000/svg" stdDeviation="2.533229347075027" /> -->
+			</filter>
+		</defs>
+		<g filter="url(#yrKBrau80As5WnVoWHqfzWDwuAtDBhPH)">
+			<linearGradient id="_lgradient_0" x1="0" y1="0.5" x2="1" y2="0.5" gradientTransform="matrix(843,0,0,64.221,266.5,227.425)" gradientUnits="userSpaceOnUse">
+				<stop offset="1.25%" stop-opacity="1" style="stop-color:rgb(255,8,0)" />
+				<stop offset="98.33333333333333%" stop-opacity="1" style="stop-color:rgb(255,183,0)" />
+			</linearGradient>
+			<path d=" M 266.5 227.425 Q 382.772 256.6 479 261 C 611.228 267.047 712.568 246.222 771 238 Q 938 214.5 1109.5 254.425 Q 1026.5 264 912 280 C 857 234 602.003 273.962 479 288.425 Q 329.281 306.029 266.5 227.425 Z " fill="url(#_lgradient_0)" />
+		</g>
+	</g>
+</svg>
