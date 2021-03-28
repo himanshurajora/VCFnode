@@ -11,6 +11,7 @@ import { from } from 'rxjs';
 import { MaterialModule } from './meterial-module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContainerComponent } from './container/container.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContainerComponent } from './container/container.component';
     ItemComponent,
     NavbarComponent,
     ContainerComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
