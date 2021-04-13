@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatashareService } from '../shared/services/datashare.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   theme = "red";
-  constructor() { }
+  username = "";
+  data = [
+    {title:'a'},
+    {title:'b'},
+    {title:'c'}
+  ];
+  current : any = null;
+  constructor(private datashare : DatashareService) { 
+    
+  }
+
 
   log(){
     console.log(this.theme);
   }
 
   ngOnInit(): void {
+    this.username = this.datashare.username;
   }
 
+  select(d: any){
+    this.current = d;
+  }
+  
 }

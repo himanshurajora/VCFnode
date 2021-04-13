@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatashareService } from '../shared/services/datashare.service';
 
 
 @Component({
@@ -9,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class ItemComponent implements OnInit {
 
   data = "This is the data i am gonna show up there";
-
-  constructor() { }
+  username = "";
+  constructor(public datashare : DatashareService) { }
 
   ngOnInit(): void {
+    this.username = this.datashare.username;
   }
 
 }

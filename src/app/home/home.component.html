@@ -1,4 +1,26 @@
-<div class="d-none d-md-block d-lg-block">
+<h1>{{username}}</h1>
+<a href="/item">Click</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="d-none d-md-block d-lg-block">
   <img id="logovcf" src="../../assets/img/vcf.png" alt="">
 </div>
 
@@ -7,11 +29,8 @@
 <div class="container-fluid">
   <div class="jumbotron bg-dark text-white">
     <div class="row">
-        <br>
+      <br>
 
-      <!-- <div class="d-xs-block d-sm-block d-md-none">
-        <img id="logovcf2" src="../../assets/img/vcf.png" alt="">
-      </div> -->
       <div class="col d-none d-md-block d-lg-block">
         <h1>VCF</h1>
         <p class="lead">Vedik Cyber Forces</p>
@@ -24,11 +43,6 @@
           <a href="#team" id="teamlink">Team</a>
         </div>
       </div>
-      
-      <!-- <div class="col d-flex justify-content-center d-none d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
-                <h1>VCF</h1><br>
-                <p class="lead">Vedik Cyber Forces</p>
-            </div> -->
 
       <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block">
         <div class="row">
@@ -53,13 +67,13 @@
 
               #teamlink:hover {
 
-                filter:brightness();
+                filter: brightness();
                 transition: 1s;
               }
 
               #teamlink:active {
 
-                filter:grayscale();
+                filter: grayscale();
                 transition: 1s;
               }
 
@@ -125,51 +139,77 @@
   <section class="bg-light" id="team">
     <h1 class="text-center"><b>Team</b></h1>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/1.jpg?h=c434e0c7fcafcc377eb28d401bc929c5">
-                    <h4>Himanshu Jangid</h4>
-                    <p class="text-muted">Founder, Lead Developer</p>
-                    <ul class="list-inline social-buttons">
-                        <!-- <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-                        <!-- <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/himanshu-jangid-5a334a196/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/2.jpg?h=8e9342204d10ea6634de08592333f8d7">
-                    <h4>Ankit Choudhary</h4>
-                    <p class="text-muted">Co-Founder, Lead Developer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ankit-choudhary-342410175/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/3.jpg?h=ea6dfd472215c4f04980b45cace43204">
-                    <h4>Diana Pertersen</h4>
-                    <p class="text-muted">Lead Developer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div> -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="team-member"><img class="rounded-circle mx-auto"
+              src="assets/img/team/1.jpg?h=c434e0c7fcafcc377eb28d401bc929c5">
+            <h4>Himanshu Jangid</h4>
+            <p class="text-muted">Founder, Lead Developer</p>
+            <ul class="list-inline social-buttons">
+
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/himanshu-jangid-5a334a196/"><i
+                    class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
+        <div class="col-sm-6">
+          <div class="team-member"><img class="rounded-circle mx-auto"
+              src="assets/img/team/2.jpg?h=8e9342204d10ea6634de08592333f8d7">
+            <h4>Ankit Choudhary</h4>
+            <p class="text-muted">Co-Founder, Lead Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/ankit-choudhary-342410175/"><i
+                    class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 </div>
 
 
 <p>{{theme}}</p>
 <style>
-  mat-form-field{
+  mat-form-field {
     width: 200px;
     margin: 30px;
   }
+
 </style>
 <mat-form-field>
   <input matInput [(ngModel)]="theme">
 </mat-form-field>
+<button mat-button color="warn" (click)="log()">
+  Button
+</button>
+
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>title</mat-card-title>
+    <mat-card-subtitle>subtitle</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-list>
+      <h2 *ngIf="current else elseblock">{{current | json}}</h2>
+      <ng-template #elseblock>
+        <h2>Select One Item</h2>
+      </ng-template>
+      <mat-list-item *ngFor="let d of data" (click)="select(d)">
+        <h3>
+          {{d.title}}
+        </h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-actions>
+</mat-card> -->
+
+
+
+
+
+

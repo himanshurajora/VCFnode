@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContainerComponent } from './container/container.component';
 import { HomeComponent } from './home/home.component';
 import {FormsModule} from '@angular/forms'
+import { DatashareService } from './shared/services/datashare.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import {FormsModule} from '@angular/forms'
     MaterialModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DatashareService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
